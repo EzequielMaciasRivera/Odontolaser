@@ -1,0 +1,280 @@
+/* Navegation */
+@font-face {
+  font-family: Odontolaser;
+  src: url(fonts/CaviarDreams.ttf);
+}
+
+.gridNav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 1rem 2rem;
+  gap: 10px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.brand {
+  display: grid;
+  align-items: center;
+  /* grid-column: 20 / 5; */
+  display: contents;
+
+}
+
+.logo {
+  width: 4rem;
+  max-width: 6rem;
+}
+
+.options {
+  grid-column: 3 / 12;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  display: flex;
+}
+
+.nav {
+  --state-close: scale(0);
+  --state-hamburguer: scale(1);
+  --state-menu: translate(-100%);
+
+
+  /* padding: 1rem 0;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(2, max-content); */
+}
+
+.nav:target {
+  --state-menu: translate(0);
+  --state-close: scale(1);
+  --state-hamburguer: scale(0);
+}
+
+.nav_logo {
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+.icon-hamburguer {
+  color: #000;
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.icon-close {
+  color: #fff;
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.nav_hamburguer,
+.nav_close {
+  cursor: pointer;
+  grid-column: -2/-1;
+  grid-row: 1/2;
+  transition: all 0.55s ease;
+}
+
+.nav_hamburguer {
+  transform: var(--state-hamburguer);
+}
+
+.nav_close {
+  transform: var(--state-close);
+}
+
+.nav_icon {
+  width: 40px;
+}
+
+.nav_links {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+
+  display: grid;
+  align-content: center;
+  gap: 2em;
+  padding-left: 5%;
+
+  transform: var(--state-menu);
+  transition: all 0.55s ease;
+}
+
+.nav_link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-family: system-ui;
+}
+
+.nav_item {
+  list-style: none;
+}
+
+.odontolaser {
+  font-family: Odontolaser;
+  font-weight: 400;
+  color: #00c2ff;
+}
+
+
+
+/* Tamaño teléfonos (480-menos ) */
+@media (max-width: 480px) {
+  .odontolaser {
+    font-size: 2.4rem;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 995px) {
+  .options {
+    grid-column: 13/ 13;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .nav {
+    --state-hamburguer: scale(0);
+    --state-menu: translate(0);
+  }
+
+  .nav:target {
+    --state-close: scale(0);
+  }
+
+  .nav_hamburguer,
+  .nav_close {
+    display: none;
+  }
+
+
+  .nav_links {
+    padding: 0;
+    background-color: unset;
+    position: unset;
+    gap: 1.5em;
+    grid-auto-flow: column;
+
+    transform: unset;
+
+    grid-column: -2/-1;
+    grid-row: 1/2;
+
+  }
+
+  .nav_link {
+    font-size: 1.1rem;
+    letter-spacing: none;
+
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: system-ui;
+  }
+}
+
+@media (min-width: 1173px) and (max-width: 1373px) {
+  .options {
+    grid-column: 6/ 13;
+  }
+}
+
+@media (min-width: 1373px) {
+  .options {
+    grid-column: 7/ 13;
+  }
+}
+
+
+/**********************************/
+
+.contenedor {
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contenedor p {
+  margin-bottom: 40px;
+}
+
+header nav {
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background-color: #00c2ff;
+  border-radius: 500px;
+}
+
+.newnavbar {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+
+  padding: 1rem 0;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+  background-color: #fff;
+  position: fixed;
+  padding: 1rem 0rem 1rem 2rem;
+  z-index: 1000;
+  top: 0;
+  box-shadow: 0px 2px 0px rgb(107 209 211 / 24%);
+  font-family: Odontolaser;
+  font-weight: 400;
+  color: #00c2ff;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0rem;
+  gap: 10px;
+  overflow: hidden;
+  align-items: center;
+
+  --state-close: scale(0);
+  --state-hamburguer: scale(1);
+  --state-menu: translate(-100%);
+}
