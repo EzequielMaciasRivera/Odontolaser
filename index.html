@@ -8,6 +8,7 @@
     <title>Odontoláser</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="Estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@100;300;400;700&display=swap"
@@ -17,8 +18,9 @@
 </head>
 
 <body>
+
     <header class="header">
-        <nav class="gridNav nav menu" id="nav">
+        <!--   <nav class="gridNav nav menu" id="nav">
             <div class="brand">
                 <img src="assets/muela.png" class="logo" alt="">
                 <h2 class="odontolaser nav_logo">Odontoláser</h2>
@@ -32,12 +34,27 @@
                         <a href="#" class="nav_link">Servicios</a>
                     </li>
                     <li class="nav_item">
+                        <a href="#About" class="nav_link">Acerca de</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#Contact" class="nav_link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="optionsMobile">
+                <ul class="nav_links">
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">Inicio</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">Servicios</a>
+                    </li>
+                    <li class="nav_item">
                         <a href="#" class="nav_link">Acerca de</a>
                     </li>
                     <li class="nav_item">
                         <a href="#" class="nav_link">Contacto</a>
                     </li>
-
                 </ul>
                 <a href="#nav" class="nav_hamburguer">
                     <i class="fa-solid fa-bars icon-hamburguer"></i>
@@ -48,7 +65,7 @@
             </div>
 
         </nav>
-        <!-- <nav class="nav container menu" id="nav">
+        <nav class="nav container menu" id="nav">
             <div class="brand">
                 <img src="assets/muela.png" class="logo" alt="">
                 <h2 class="odontolaser nav_logo">Odontoláser</h2>
@@ -75,9 +92,40 @@
                 <i class="fa-solid fa-circle-xmark icon-close"></i>
             </a>
         </nav> -->
+
+        <!--Barra de navegacion para celular-->
+        <div id="barra2">
+            <a id="menu_on">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <a id="menuimg" href="index.html"><img loading="lazy" src="Img/logo.png" alt="" height="60" /></a>
+            <nav id="nav2">
+                <ul>
+
+                    <li><a class="menu" href="#nosotros"><strong><span style=" color: white;">Nosotros</span></a></li>
+                    <li><a class="menu" href="#productos"><strong><span
+                                    style=" color: white;">Servicios</span></strong></a></li>
+                    <li><a class="menu" href="Proyectos.html"><strong><span
+                                    style=" color: white;">Proyectos</span></strong></a></li>
+                    <li><a class="menu" href="" data-toggle="modal" data-target="#miModal"><strong><span
+                                    style="color: white;">Cámaras <br>termográficas</span></strong></a></li>
+                    <li><a class="menu" href="#contactanos"><strong><span
+                                    style=" color: white;">Contáctanos</span></strong></a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+        <!--Fín Barra de navegacion para celular-->
     </header>
     <main>
         <section class="grid">
+            <!--Boton de ir hacia arriba-->
+            <div id="button-up">
+                <i style='font-size:24px' class='fas'>&#xf5c9;</i>
+            </div>
             <div class="textos-hero">
                 <h1 class="weight-600">
                     Convertimos tus sueños <span class="weight-400"> en relidad</span>
@@ -92,7 +140,7 @@
                 <img src="assets/things.png" class="img" alt="">
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="About">
             <section class="grid">
                 <div class="items">
                     <div class="item">
@@ -151,10 +199,11 @@
                 <img src="assets/free.svg" class="img">
             </div>
         </section>
+
     </main>
 
     <footer>
-        <div class="grid">
+        <div class="grid" id="Contact">
             <div class="textos-footer">
                 <h2 class="subtitle">Contactanos</h2>
             </div>
@@ -180,6 +229,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/3944eb558f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
