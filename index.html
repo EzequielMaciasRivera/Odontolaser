@@ -8,7 +8,7 @@
     <title>Odontoláser</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
-    <link rel="stylesheet" href="Estilo.css">
+    <link rel="stylesheet" href="mobile_menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@100;300;400;700&display=swap"
@@ -18,12 +18,35 @@
 </head>
 
 <body>
-
     <header class="header">
-        <!--   <nav class="gridNav nav menu" id="nav">
+        <!--Barra de navegacion para celular-->
+        <div id="barra2">
+            <i class="fa-solid fa-chevron-up"></i>
+            <a id="menu_on"></a>
+
+            <nav id="nav2">
+                <i class="fa-solid fa-chevron-up expand-icon"></i>
+                <ul>
+                    <li><a class="menu" href="#nosotros"><strong><span style=" color: white;">Nosotros</span></a></li>
+                    <li><a class="menu" href="#productos"><strong><span
+                                    style=" color: white;">Servicios</span></strong></a></li>
+                    <li><a class="menu" href="Proyectos.html"><strong><span
+                                    style=" color: white;">Proyectos</span></strong></a></li>
+                    <li><a class="menu" href="#contactanos"><strong><span
+                                    style=" color: white;">Contáctanos</span></strong></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Fín Barra de navegacion para celular-->
+        <nav class="gridNav nav menu optionsInferioir" id="nav">
             <div class="brand">
                 <img src="assets/muela.png" class="logo" alt="">
                 <h2 class="odontolaser nav_logo">Odontoláser</h2>
+                <a id="menu_on">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
             <div class="options">
                 <ul class="nav_links">
@@ -41,31 +64,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="optionsMobile">
-                <ul class="nav_links">
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">Inicio</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">Servicios</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">Acerca de</a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">Contacto</a>
-                    </li>
-                </ul>
-                <a href="#nav" class="nav_hamburguer">
-                    <i class="fa-solid fa-bars icon-hamburguer"></i>
-                </a>
-                <a href="#" class="nav_close">
-                    <i class="fa-solid fa-circle-xmark icon-close"></i>
-                </a>
-            </div>
-
         </nav>
-        <nav class="nav container menu" id="nav">
+        <!-- <nav class="nav container menu" id="nav">
             <div class="brand">
                 <img src="assets/muela.png" class="logo" alt="">
                 <h2 class="odontolaser nav_logo">Odontoláser</h2>
@@ -92,33 +92,6 @@
                 <i class="fa-solid fa-circle-xmark icon-close"></i>
             </a>
         </nav> -->
-
-        <!--Barra de navegacion para celular-->
-        <div id="barra2">
-            <a id="menu_on">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-            <a id="menuimg" href="index.html"><img loading="lazy" src="Img/logo.png" alt="" height="60" /></a>
-            <nav id="nav2">
-                <ul>
-
-                    <li><a class="menu" href="#nosotros"><strong><span style=" color: white;">Nosotros</span></a></li>
-                    <li><a class="menu" href="#productos"><strong><span
-                                    style=" color: white;">Servicios</span></strong></a></li>
-                    <li><a class="menu" href="Proyectos.html"><strong><span
-                                    style=" color: white;">Proyectos</span></strong></a></li>
-                    <li><a class="menu" href="" data-toggle="modal" data-target="#miModal"><strong><span
-                                    style="color: white;">Cámaras <br>termográficas</span></strong></a></li>
-                    <li><a class="menu" href="#contactanos"><strong><span
-                                    style=" color: white;">Contáctanos</span></strong></a></li>
-
-
-                </ul>
-            </nav>
-        </div>
-        <!--Fín Barra de navegacion para celular-->
     </header>
     <main>
         <section class="grid">

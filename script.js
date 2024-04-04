@@ -12,9 +12,6 @@ function scrollUp() {
     }
 }
 
-
-///
-
 buttonUp = document.getElementById("button-up");
 
 window.onscroll = function () {
