@@ -152,7 +152,7 @@ body {
 /* Mission */
 
 .mission {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .textos-mission {
@@ -161,6 +161,11 @@ body {
     margin: 15px;
 }
 
+.textos-mapa {
+    grid-column: 1 / 7;
+    grid-row: 1 / -1;
+    margin: 15px;
+}
 
 h3 {
     margin: 15px;
@@ -169,6 +174,11 @@ h3 {
 .img-mission {
     grid-column: 1/7;
     grid-row: 1/-1;
+}
+
+.mapa {
+    grid-column: 7 / 13;
+    grid-row: 1 / -1;
 }
 
 /* Footer */
@@ -312,6 +322,18 @@ footer {
     .textos-mission {
         grid-column: 1/-1;
         grid-row: 1/2;
+        align-self: center;
+    }
+
+    .textos-mapa {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        align-self: center;
+    }
+
+    .mapa {
+        grid-column: 1/-1;
+        grid-row: 2/2;
         align-self: center;
     }
 
