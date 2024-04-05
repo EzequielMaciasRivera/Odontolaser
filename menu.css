@@ -163,7 +163,22 @@
 }
 
 /* Tamaño teléfonos (480-menos ) */
-@media (max-width: 480px) {
+@media (max-width: 370px) {
+  .odontolaser {
+    font-size: 2rem;
+    padding-right: 15px;
+  }
+}
+
+/* Tamaño teléfonos (400px-menos ) */
+@media (max-width: 400px) {
+  .gridNav {
+    margin: 1rem 0.6rem;
+  }
+}
+
+/* Tamaño teléfonos (480-menos ) */
+@media (min-width: 370px) and (max-width: 480px) {
   .odontolaser {
     font-size: 2.4rem;
     padding-right: 15px;
