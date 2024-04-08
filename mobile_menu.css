@@ -55,6 +55,7 @@
   border-radius: 20px 20px 0 0;
   transition: transform 750ms ease-in-out;
   transition-timing-function: linear;
+  width: 100%;
 }
 
 #nav2 a {
