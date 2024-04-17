@@ -6,6 +6,21 @@ $(document).ready(function () {
         var scroll2 = document.documentElement.scrollTop;
 
         if (scroll2 > 90) {
+            $('.linksColor').addClass('nav_linkBlack');
+        } else if (scroll2 < 90) {
+            $('.linksColor').removeClass('nav_linkBlack');
+        }
+    });
+
+});
+$(document).ready(function () {
+
+
+    $(window).on('scroll', function () {
+
+        var scroll2 = document.documentElement.scrollTop;
+
+        if (scroll2 > 90) {
             $('.optionsInferioir').addClass('menu-fixed');
         } else if (scroll2 < 90) {
             $('.optionsInferioir').removeClass('menu-fixed');

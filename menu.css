@@ -225,7 +225,7 @@
     font-size: 1.1rem;
     letter-spacing: none;
 
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
     letter-spacing: 2px;
     font-family: system-ui;
@@ -293,7 +293,8 @@ header nav ul li a:hover {
 
 /* --- Clase que agregaremos cuando el usuario haga scroll --- */
 .menu-fixed {
-  background-color: #fff;
+  background-color: #ffffff;
+  color: #fff;
   position: fixed;
   padding: 1rem 0rem 1rem 2rem;
   z-index: 9;
@@ -305,6 +306,10 @@ header nav ul li a:hover {
   gap: 10px;
   overflow: hidden;
   align-items: center;
+}
+
+.nav_linkBlack {
+  color: #000000;
 }
 
 .expand-iconContainer {
